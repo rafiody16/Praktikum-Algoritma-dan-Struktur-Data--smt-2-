@@ -29,25 +29,25 @@ public class array {
         for (int i = 0; i < mk.length; i++) {
             if (nilai[i] > 80) {
                 predikat = "A";
-                bobotNilai = 4;
+                bobotNilai = 4.00;
             } else if (nilai[i] > 73) {
                 predikat = "B+";
-                bobotNilai = 3.5;
+                bobotNilai = 3.50;
             } else if (nilai[i] > 65) {
                 predikat = "B"; 
-                bobotNilai = 3;
+                bobotNilai = 3.00;
             } else if (nilai[i] > 60) {
                 predikat = "C+";
-                bobotNilai = 2.5;
+                bobotNilai = 2.50;
             } else if (nilai[i] > 50) {
                 predikat = "C";
-                bobotNilai = 2;
+                bobotNilai = 2.00;
             } else if (nilai[i] > 39) {
                 predikat = "D";
-                bobotNilai = 1;
+                bobotNilai = 1.00;
             } else {
                 predikat = "E";
-                bobotNilai = 0;
+                bobotNilai = 0.00;
             }
 
             totalNilai += bobotNilai * bobotSKS[i];
