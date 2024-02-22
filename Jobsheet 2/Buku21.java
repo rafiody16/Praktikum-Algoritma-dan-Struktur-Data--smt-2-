@@ -28,8 +28,3 @@ public class Buku21 {
     }
 
 }
-
-// public Buku21(String jud, String pg, int hal, int stok, int har) {
-//     judul = jud;
-//     pengarang = pg;
-// }
