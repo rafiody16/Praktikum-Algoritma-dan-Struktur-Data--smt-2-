@@ -17,9 +17,14 @@ public class Buku21Main {
         bk2.terjual(11);
         bk2.tampilInformasi();
 
-        Buku21 bukuRafiOdyPrasetyo = new Buku21("Laskar Pelangi", "Andrea Hirata", 529, 30, 60000);
-        bukuRafiOdyPrasetyo.terjual(4);
+        Buku21 bukuRafiOdyPrasetyo = new Buku21("Laskar Pelangi", "Andrea Hirata", 529, 30, 150000);
         bukuRafiOdyPrasetyo.tampilInformasi();
+        bukuRafiOdyPrasetyo.terjual(10);
+        bukuRafiOdyPrasetyo.total = bukuRafiOdyPrasetyo.hitungHargaTotal();
+        System.out.println("Total Hasil Penjualan : " + bukuRafiOdyPrasetyo.total);
+        bukuRafiOdyPrasetyo.diskon = bukuRafiOdyPrasetyo.hitungDiskon();
+        System.out.println("Anda Mendapatkan Diskon Sebesar : " + bukuRafiOdyPrasetyo.diskon);
+        System.out.println("Total yang harus dibayar : " + bukuRafiOdyPrasetyo.hitungHargaBayar());
     }
 
 }
