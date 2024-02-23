@@ -16,6 +16,10 @@ public class Buku21Main {
         Buku21 bk2 = new Buku21("Self Reward", "Maheera Ayesha", 160, 29, 59000);
         bk2.terjual(11);
         bk2.tampilInformasi();
+
+        Buku21 bukuRafiOdyPrasetyo = new Buku21("Laskar Pelangi", "Andrea Hirata", 529, 30, 60000);
+        bukuRafiOdyPrasetyo.terjual(4);
+        bukuRafiOdyPrasetyo.tampilInformasi();
     }
 
 }
