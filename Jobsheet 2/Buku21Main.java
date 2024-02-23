@@ -17,13 +17,12 @@ public class Buku21Main {
         bk2.terjual(11);
         bk2.tampilInformasi();
 
-        Buku21 bukuRafiOdyPrasetyo = new Buku21("Laskar Pelangi", "Andrea Hirata", 529, 30, 150000);
-        bukuRafiOdyPrasetyo.tampilInformasi();
+        Buku21 bukuRafiOdyPrasetyo = new Buku21("Laskar Pelangi", "Andrea Hirata", 
+                                            529, 30, 150000);
         bukuRafiOdyPrasetyo.terjual(10);
-        bukuRafiOdyPrasetyo.total = bukuRafiOdyPrasetyo.hitungHargaTotal();
-        System.out.println("Total Hasil Penjualan : " + bukuRafiOdyPrasetyo.total);
-        bukuRafiOdyPrasetyo.diskon = bukuRafiOdyPrasetyo.hitungDiskon();
-        System.out.println("Anda Mendapatkan Diskon Sebesar : " + bukuRafiOdyPrasetyo.diskon);
+        bukuRafiOdyPrasetyo.tampilInformasi();
+        System.out.println("Total Hasil Penjualan : " + bukuRafiOdyPrasetyo.hitungHargaTotal());
+        System.out.println("Anda Mendapatkan Diskon Sebesar : " + bukuRafiOdyPrasetyo.hitungDiskon());
         System.out.println("Total yang harus dibayar : " + bukuRafiOdyPrasetyo.hitungHargaBayar());
     }
 

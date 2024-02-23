@@ -17,14 +17,14 @@ public class Dragon21 {
     }
 
     void moveUp() {
-        y += 1;
+        y -= 1;
         if (y < 0 || y > height) {
             detectCollision(x, y);
         }
     }
 
     void moveDown() {
-        y -= 1;
+        y += 1;
         if (y < 0 || y > height) {
             detectCollision(x, y);
         }
