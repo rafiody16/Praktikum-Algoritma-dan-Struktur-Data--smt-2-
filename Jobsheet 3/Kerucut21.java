@@ -1,19 +1,20 @@
-public class Kerucut21 {
+public class Kerucut21 extends BangunRuang21{
 
-    public int jari2, tinggi, gPelukis;
+    public int jari2, SisiMiring;
 
-    public Kerucut21(int r, int t, int s){
-        jari2 = r;
-        tinggi = t;
-        gPelukis = s;
+    public Kerucut21(int jari2, int SisiMiring){
+        this.jari2 = jari2;
+        this.SisiMiring = SisiMiring;
     }
 
-    public double LPKerucut(){
-        return 3.14 * jari2 * (jari2 + gPelukis);
+    public void LuasPermukaan(){
+        double lp = Math.PI * jari2 * (jari2 + SisiMiring);
+        System.out.println("Luas Permukaan Kerucut: "+lp);
     }
 
-    public double VolKerucut(){
-        return 1/3 * 3.14 * jari2 * jari2 * tinggi;
+    public void Volume(){
+        double vol = (1.0/3.0) * Math.PI * Math.pow(jari2, 2) * SisiMiring;
+        System.out.println("Volume Kerucut: "+vol);
     }
     
 }
