@@ -2,6 +2,12 @@ public class Pangkat21 {
     
     public int nilai, pangkat;
 
+    public Pangkat21(int nilai, int pangkat)
+    {
+        this.pangkat = pangkat;
+        this.nilai = nilai;
+    }
+
     int pangkatBF(int a, int n)
     {
         int hasil = 1;
