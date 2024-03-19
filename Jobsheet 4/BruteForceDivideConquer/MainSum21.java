@@ -8,6 +8,8 @@ public class MainSum21 {
         
         System.out.println("===============================");
         System.out.println("Program Menghitung Keuntungan total (Satuan Juta. Misal 5.9)");
+        System.out.println("Masukkan jumlah perusahaan yang akan dihitung: ");
+        int prs = sc.nextInt();
         System.out.print("Masukkan Jumlah Bulan: ");
         int elm = sc.nextInt();
 
