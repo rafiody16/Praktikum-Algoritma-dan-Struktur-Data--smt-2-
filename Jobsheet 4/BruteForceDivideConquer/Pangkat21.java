@@ -2,11 +2,12 @@ public class Pangkat21 {
     
     public int nilai, pangkat;
 
-    public Pangkat21(int nilai, int pangkat)
+    public Pangkat21 (int nilai, int pangkat)
     {
-        this.pangkat = pangkat;
         this.nilai = nilai;
+        this.pangkat = pangkat;
     }
+
 
     int pangkatBF(int a, int n)
     {

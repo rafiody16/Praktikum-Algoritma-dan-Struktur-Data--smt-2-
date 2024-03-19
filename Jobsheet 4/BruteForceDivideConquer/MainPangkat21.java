@@ -17,24 +17,39 @@ public class MainPangkat21 {
             int nilai = sc.nextInt();
             System.out.print("Masukkan nilai pangkat: ");
             int pangkat = sc.nextInt();
-            png [i] = new Pangkat21(nilai ,pangkat);
+            png [i] = new Pangkat21(nilai, pangkat);
+            System.out.println();
             sc.nextLine();
         }
 
-        System.out.println("Hasil Pangkat - BRUTE FORCE");
-        for (int i = 0; i < elemen; i++) {
-            System.out.println("Hasil dari "
-            + png[i].nilai +" pangkat "
-            + png[i].pangkat +" adalah "
-            + png[i].pangkatBF(png[i].nilai, png[i].pangkat));
-        }
+        System.out.println("Main Menu");
+        System.out.println("1. Hasil Pangkat BF\n2. Hasil Pangkat DC");
+        System.out.print("Pilih: ");
+        int pilih = sc.nextInt();
 
-        System.out.println("Hasil Pangkat - DIVIDE AND CONQUER");
-        for (int i = 0; i < elemen; i++) {
-            System.out.println("Hasil dari "
-            + png[i].nilai +" pangkat "
-            + png[i].pangkat +" adalah "
-            + png[i].pangkatDC(png[i].nilai, png[i].pangkat));
+        switch (pilih) {
+            case 1:
+                System.out.println("Hasil Pangkat - BRUTE FORCE");
+                for (int i = 0; i < elemen; i++) {
+                    System.out.println("Hasil dari "
+                    + png[i].nilai +" pangkat "
+                    + png[i].pangkat +" adalah "
+                    + png[i].pangkatBF(png[i].nilai, png[i].pangkat));
+                }
+                break;
+            
+            case 2:
+                System.out.println("Hasil Pangkat - DIVIDE AND CONQUER");
+                for (int i = 0; i < elemen; i++) {
+                    System.out.println("Hasil dari "
+                    + png[i].nilai +" pangkat "
+                    + png[i].pangkat +" adalah "
+                    + png[i].pangkatDC(png[i].nilai, png[i].pangkat));
+                }
+                break;
+        
+            default:
+                break;
         }
 
         sc.close();
