@@ -6,7 +6,9 @@ public class Faktorial21 {
     {
         int fakto = 1;
         int i = 1;
-
+        // for (int i = 1; i <= n; i++) {
+        //     fakto = fakto * i;
+        // }
         while (i <= n) {
             fakto = fakto * i;
             i++;            
