@@ -19,7 +19,9 @@ public class MainMahasiswa21 {
         list.tampil();
 
         System.out.println("Data Mahasiswa Setelah Sorting desc Berdasarkan IPK: ");
-        list.bubbleSort();
+        // list.bubbleSort();
+        // list.selectionSort();
+        list.insertionSort();
         list.tampil();
 
     }
