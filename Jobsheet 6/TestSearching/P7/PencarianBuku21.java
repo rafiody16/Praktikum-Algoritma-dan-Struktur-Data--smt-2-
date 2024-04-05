@@ -69,13 +69,13 @@ public class PencarianBuku21{
     {
         int mid;
         if (right >= left) {
-            mid = (right) / 2;
+            mid = left + (right - left) / 2;
             if (cari == listBk[mid].kodeBuku) {
-                return (mid);                 
+                return mid;                 
             } else if (listBk[mid].kodeBuku > cari) {
-                return FindBinarySearch(cari, left, right);
+                return FindBinarySearch(cari, left, mid - 1);
             } else {
-                return FindBinarySearch(cari, left, right);
+                return FindBinarySearch(cari, mid + 1, right);
             }
         }
         return -1;

@@ -47,8 +47,14 @@ public class BukuMain21 {
         data.tampilData(cari, posisi);
 
         //pertanyaan no.3 percobaan 1
-        Buku21 dataBuku21 = data.findBuku(cari);
-        dataBuku21.tampilDataBuku();
+        // Buku21 dataBuku21 = data.findBuku(cari);
+        // dataBuku21.tampilDataBuku();
+
+        System.out.println("___________________________");
+        System.out.println("Menggunakan Binary Search");
+        posisi = data.FindBinarySearch(cari, 0, data.listBk.length - 1);
+        data.Tampilposisi(cari, posisi);
+        data.tampilData(cari, posisi);
 
         s.close();
         s1.close();
