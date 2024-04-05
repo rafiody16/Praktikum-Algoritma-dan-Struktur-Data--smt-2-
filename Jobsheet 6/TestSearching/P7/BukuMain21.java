@@ -44,6 +44,14 @@ public class BukuMain21 {
         System.out.println("Menggunakan sequential search");
         int posisi = data.FindSeqSearch(cari);
         data.Tampilposisi(cari, posisi);
+        data.tampilData(cari, posisi);
+
+        //pertanyaan no.3 percobaan 1
+        Buku21 dataBuku21 = data.findBuku(cari);
+        dataBuku21.tampilDataBuku();
+
+        s.close();
+        s1.close();
     }
     
 }

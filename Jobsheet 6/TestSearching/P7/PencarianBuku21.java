@@ -42,4 +42,43 @@ public class PencarianBuku21{
         }
     }
 
+    public void tampilData(int x, int pos)
+    {
+        if (pos != -1) {
+            System.out.println("Kode Buku\t: "+ x);
+            System.out.println("Judul\t\t: "+ listBk[pos].judulBuku);
+            System.out.println("Tahun\t\t: "+ listBk[pos].tahunTerbit);
+            System.out.println("Pengarang\t: "+ listBk[pos].pengarang);
+            System.out.println("Stock\t\t: "+ listBk[pos].stock);
+        } else {
+            System.out.println("Data: "+ x +" tidak ditemukan");
+        }
+    }
+
+    public Buku21 findBuku(int kodeBuku)
+    {
+        for (int i = 0; i < listBk.length; i++) {
+            if (listBk[i].kodeBuku == kodeBuku) {
+                return listBk[i];
+            }
+        }
+        return null;
+    }
+
+    public int FindBinarySearch(int cari, int left, int right)
+    {
+        int mid;
+        if (right >= left) {
+            mid = (right) / 2;
+            if (cari == listBk[mid].kodeBuku) {
+                return (mid);                 
+            } else if (listBk[mid].kodeBuku > cari) {
+                return FindBinarySearch(cari, left, right);
+            } else {
+                return FindBinarySearch(cari, left, right);
+            }
+        }
+        return -1;
+    }
+
 }
