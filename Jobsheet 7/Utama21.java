@@ -6,9 +6,12 @@ public class Utama21 {
 
         Scanner scanner = new Scanner(System.in);
 
-        Gudang21 gudang = new Gudang21(7);
+        System.out.print("Masukkan kapasitas gudang: ");
+        int kapasitas = scanner.nextInt();
+        Gudang21 gudang = new Gudang21(kapasitas);
 
-        while (true) {
+        boolean stop = false;
+        while (!stop) {
             System.out.println("\nMenu: ");
             System.out.println("1. Tambah Barang");
             System.out.println("2. Ambil Barang");
@@ -18,7 +21,7 @@ public class Utama21 {
             System.out.print("Pilih operasi: ");
             int pilihan = scanner.nextInt();
             scanner.nextLine();
-            
+
             switch (pilihan) {
                 case 1:
                     System.out.print("Masukkan kode barang: ");
@@ -38,11 +41,16 @@ public class Utama21 {
                     gudang.tampilkanBarang();
                     break;
                 case 4:
+                    gudang.lihatBarangTeratas();
+                    break;
+                case 0:
+                    stop = true;
                     break;
                 default:
                     System.out.println("Pilihan tidak valid, silahkan coba lagi."); 
             }
         }
+        scanner.close();
     }
     
 }
