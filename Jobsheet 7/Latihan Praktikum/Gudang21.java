@@ -88,5 +88,23 @@ public class Gudang21 {
             return null;
         }
     }
+
+    public Barang21 cariBarang(String input) {
+        if (!cekKosong()) {
+            for (int i = 0; i <= top; i++) {
+                String kode = Integer.toString(tumpukan[i].kode);
+                if (tumpukan[i].nama.equalsIgnoreCase(input) || kode.equalsIgnoreCase(input)) {
+                    System.out.printf("Barang dengan kode %d dan nama %s ditemukan di Gudang\n", tumpukan[i].kode,
+                            tumpukan[i].nama);
+                    return tumpukan[i];
+                }
+            }
+            System.out.println("Barang tidak ditemukan di Gudang");
+            return null;
+        } else {
+            System.out.println("Tumpukan Barang di Gudang kosong");
+            return null;
+        }
+    }
     
 }
