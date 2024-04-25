@@ -1,3 +1,5 @@
+package Percobaan_1;
+
 public class Queue21 {
 
     int[] data;
