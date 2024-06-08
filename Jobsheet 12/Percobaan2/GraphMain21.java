@@ -46,6 +46,11 @@ public class GraphMain21 {
         gdg.removeEdge(2, 1);
         gdg.printGraph();
 
+        for (int i = 0; i < gdg.vertex; i++) {
+            System.out.println((char) ('A' + i));
+            gdg.degree(i);
+        }
+
         sc.close();
     }
     
